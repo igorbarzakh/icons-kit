@@ -1,0 +1,33 @@
+{
+  "name": "icons-kit",
+  "version": "1.0.0",
+  "description": "Автоматическая генерация React компонентов из SVG иконок",
+  "scripts": {
+    "build": "node scripts/build.js",
+    "dev": "node scripts/build.js --watch",
+    "clean": "rm -rf dist optimized",
+    "prebuild": "npm run clean"
+  },
+  "keywords": [
+    "icons",
+    "svg",
+    "react",
+    "components"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "@babel/preset-react": "^7.27.1",
+    "@babel/plugin-transform-react-jsx": "^7.0.0",
+    "@svgr/core": "^8.1.0",
+    "@types/node": "^20.0.0",
+    "chokidar": "^3.5.0",
+    "fs-extra": "^11.0.0",
+    "svgo": "^3.0.0"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0"
+  }
+}
